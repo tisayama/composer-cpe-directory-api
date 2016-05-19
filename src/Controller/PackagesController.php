@@ -54,7 +54,7 @@ class PackagesController extends AppController
             }
 
             $this->set(['packages' => $package]);
-            $this->set('_serialize', ['package']);
+            $this->set('_serialize', ['packages']);
 
         } else {
             $this->redirect(['controller' => 'pages', 'action' => 'display']);
