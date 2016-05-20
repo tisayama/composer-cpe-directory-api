@@ -101,6 +101,8 @@ class PackagesController extends AppController
                 $cve['cvss_v2_score'] = $cveEntity->cvss_v2_score;
                 $cve['cvss_v2_source'] = $cveEntity->cvss_v2_source;
 
+                $cve['reference_url'] = 'https://www.cvedetails.com/cve/' . $cveEntity->cve_name . '/';
+
                 $version["cves"][] = $cve;
 
             }
